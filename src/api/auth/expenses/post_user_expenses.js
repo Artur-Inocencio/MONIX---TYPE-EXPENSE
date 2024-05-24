@@ -2,7 +2,7 @@ import { supabase } from '../../../init';
 import { createTypeExpenses } from '../../../database/createTypeExpenses.js';
 import {v4 as uuidv4} from 'uuid';
 
-export const post_user_expense = async (req, res) => {
+export const post_user_expenses = async (req, res) => {
   try {
     if (!req.body.value 
       || !req.body.date
